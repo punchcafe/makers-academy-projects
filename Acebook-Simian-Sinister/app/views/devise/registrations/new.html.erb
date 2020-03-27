@@ -1,0 +1,55 @@
+<div class = "nav-bar">
+  <div id="nav-menu">
+      Hakuna Matata!
+  </div>
+  <div id="logo">
+  </div>
+</div>
+
+<div class = "sign_up_form">
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="field">
+      <%= f.label :first_name, class: "hidden" %><br />
+      <%= f.text_field :first_name, autofocus: true, autocomplete: "First Name", placeholder: "First Name", class: "form-basic" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :last_name, class: "hidden" %><br />
+      <%= f.text_field :last_name, autofocus: true, autocomplete: "Last Name", placeholder: "Last Name", class: "form-basic" %>
+    </div>
+   <br>
+
+   <div class="field">
+     <%= f.label :profile_picture %><br />
+     <%= f.file_field :profile_picture %>
+   </div>
+   <br>
+    <div class="field">
+      <%= f.label :username, class: "hidden" %><br />
+      <%= f.text_field :username, autofocus: true, autocomplete: "Username", placeholder: "Username", class: "form-basic" %>
+    </div>
+      <br>
+    <div class="field">
+      <%= f.label :email, class: "hidden" %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "form-basic" %>
+    </div>
+      <br>
+    <div class="field">
+      <%= f.label :password, class: "hidden" %>
+      <br />
+      <%= f.password_field :password, autocomplete: "new-password", placeholder: "Password (6 characters minimum)", class: "form-basic" %>
+    </div>
+    <div class="field">
+      <%= f.label :password_confirmation, class: "hidden" %><br />
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Password", class: "form-basic" %>
+    </div>
+    <br/>
+        <br/>
+
+    <div class="actions">
+      <%= f.submit "Sign up", :id => 'sign-in'%>
+    </div>
+  <% end %>
+</div>

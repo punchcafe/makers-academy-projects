@@ -1,0 +1,46 @@
+<div class="navi">
+  <%= @user ? @user.username : "" %>
+  <% if @user %>
+  <%= link_to('sign out', destroy_user_session_path, method: :delete) %>
+  <%= link_to 'New Post', new_post_path %>
+  <% else %>
+  <%= link_to 'sign in', new_user_session_path %>
+  <%= link_to 'sign up', new_user_registration_path %>
+  <% end %>
+
+
+
+  </div>
+
+
+<p id="notice"><%= notice %></p>
+<div class="snapstream">
+    <% @posts.each do |post| %>
+    <div class="snap">
+    <img src="snapframe.png" class="snap_frame">
+    <img src="<%= post.snap.url %>" class="snap_body">
+    <div class="snap_comment">
+      <%= post.message %>
+    </div>
+    </div>
+    <%= link_to 'Show', post %>
+    <% @comments.where(post_id: post.id).each{ |comment| %>
+    <br><%= comment.message %>
+    <% } %>
+    <% if @user %>
+      <%= form_tag("/comments", method: "post") do %>
+        <%= text_field :message, "contents" %>
+        <%= hidden_field_tag(:user_id, @user.id) %>
+        <%= hidden_field_tag(:post_id, post.id) %>
+        <div class="actions">
+          <%= submit_tag "comment"%>
+        </div>
+    <% end %>
+    <% end %>
+    <% if @user && @user.id == post.user_id %>
+    <%= link_to 'Edit', edit_post_path(post) %>
+    <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% end %>
+    <% end %>
+<br>
+</div>

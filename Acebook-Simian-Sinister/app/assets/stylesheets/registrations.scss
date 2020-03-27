@@ -1,0 +1,30 @@
+
+body {
+  text-align: center;
+background-image: url(asset-path("navbar_background.jpg"));
+}
+
+.sign_up_form {
+  // background-color: rgba(119, 90, 90, 0.753);
+  width: 35%; 
+  display: inline-block;
+  margin-top: 100px;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+// .sign_up_form:hover {
+//   transition: 0.2s;
+//   box-shadow: 7px 10px;
+// }
+
+.field {
+  display: inline-block;
+  border-radius: 50px 20px;
+
+}
+
+.field_with_errors {
+  padding: 0px;
+  margin: 0px;
+}

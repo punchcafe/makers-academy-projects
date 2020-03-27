@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <title>Makers BnB</title>
+</head>
+<body>
+<%= erb(:navbar) %>
+<div id="splashimage">
+  <div id="splashtext">
+    <h1> Thundercats are GO! </h1>
+    <p>and we're taking you with us</p>
+  </div>
+  <div id="splashcover">
+    <div><br>
+      <h3>Search dates</h3>
+      </div>
+  </div>
+</div>
+
+
+  <div class = 'container'>
+    <ul>
+      <% @spaces.each { |space| %>
+        <li>
+          <h5><%= space.space_name %></h5>
+            <p>£ <%= space.price %> / night</p>
+          <img src="https://source.unsplash.com/600x400?livingroom,kitchen,bedroom,food" alt="">
+          <p>Description: <%= space.description %></p>
+        </li>
+        <% } %>
+      </ul>
+    </div>
+
+  </body>
+  </html>

@@ -1,0 +1,107 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=Gaegu');
+
+* {
+  font-family: 'Gaegu', cursive;
+  color: white;
+  font-size: 14px;
+
+
+}
+
+#profile-picture {
+  position: absolute;
+  right: 10px;
+  border: white solid 1px;
+  overflow: hidden;
+  box-shadow: 0px 5px 4px black;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+#profile-picture:hover {
+  transition: 0.2s;
+  border: orange solid 1px;
+}
+
+#profile-picture img{
+  width: 50px;
+}
+
+body {
+  margin: 0px;
+  background-image: url(asset-path("hans-eiskonen-18944-unsplash.jpg"));
+  width: 100%;
+  background-size: 120%;
+}
+
+.nav-bar #logo {
+  background-image: url(asset-path("logo.png"));
+  width: 240px;
+  background-size: cover;
+  height: 40px;
+}
+
+#nav-menu {
+  text-align: right;
+  padding-right: 30px;
+
+}
+
+// .nav-bar:hover #logo {
+//   transition: 0.25s;
+//   width: 400px;
+//   height: 70px;
+// }
+
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  background-image: url(asset-path("navbar_background.jpg"));
+  background-size: 20%;
+  text-align: right;
+}
+
+// .nav-bar:hover {
+//   height: 125px;
+//   transition: 0.28s;
+// }
+
+.message {
+  // background-color: rgba(119, 90, 90, 0.753);
+  width: 35%;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 30px;
+  border-radius: 50px 20px;
+  margin-top: 250px;
+
+
+}
+
+.form-basic {
+  width: 90%;
+  height: 150%;
+  text-align: center;
+  border-radius: 50px 20px;
+  color: brown;
+
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JunglBook</title>
+    <%= csrf_meta_tags %>
+    <%= favicon_link_tag asset_path('Diego-icon.png') %>
+
+
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

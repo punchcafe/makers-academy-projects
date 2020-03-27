@@ -1,0 +1,38 @@
+<div class = "nav-bar">
+  <div id="nav-menu">
+      Hakuna Matata!
+  </div>
+  <div id="logo">  
+  </div>  
+</div>
+
+<main id='grid-container'>
+<div id='g1'></div>
+<div id='g2'></div>
+<div id='g3'></div>
+<div id='g4'></div>
+<div id='g5'>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.label :email, class: "hidden"%><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "EMAIL", class: "form-basic"%>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :password, class: "hidden" %><br />
+    <%= f.password_field :password, autocomplete: "current-password", placeholder: "PASSWORD", class: "form-basic"%>
+  </div>
+<br>
+<br>
+  <div class="actions">
+    <%= f.submit "sign in", :id => 'sign-in'%>
+  </div>
+<% end %>
+
+</div>
+<div id='g6'></div>
+<div id='g7'></div>
+<div id='g8'><%= render "devise/shared/links" %> </div>
+<div id='g9'></div>
+
+</main>

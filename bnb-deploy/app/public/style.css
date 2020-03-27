@@ -1,0 +1,525 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: white;
+  color: #263238;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+    display: inline;
+}
+
+button {
+  outline:none;
+  height: 30px;
+  text-align: center;
+  width: 100px;
+  border-radius:30px;
+  background: #4169E1;
+  border: 2px solid #fff;
+  color: #fff;
+  letter-spacing:1px;
+  text-shadow:0;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+ul, li {
+  margin-top: 15px;
+  margin-left: 0;
+  padding-left: 0;
+  min-width: 80vw;
+  color: #263238;
+  list-style-type: none;
+  /* text-align: left; */
+  /* width: 50%; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  background: rgba(255, 255, 255, 0.7);
+  max-width: 800px;
+  margin: auto;
+}
+
+#navbar {
+  z-index: 1;
+  border-bottom: 1px solid lightgray;
+  align: center;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  color: black;
+  height: 80px;
+}
+
+#navbar .contentholder {
+  display: inline-block;
+  text-align: left;
+  position: static;
+  width: 1000px;
+  height: 100%;
+  background-color: white;
+}
+
+#navbar .contentholder .logo {
+  display: inline-block;
+  width: 200px;
+  height: 70px;
+  text-align: left;
+  background-color: white;
+}
+
+#navbar .contentholder #space {
+  display: inline-block;
+  width: 250px;
+  text-align: left;
+
+}
+
+#navbar .contentholder .controlpanel {
+  width: 500px;
+  background-color: blue;
+  display: inline-block;
+  text-align: right;
+  color: #5D6D7E;
+  background-color: white;
+}
+
+#navbar .contentholder .controlpanel .inputs{
+  text-align: center;
+  font-style: italic;
+  height: 20px;
+  width: 120px;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+}
+
+#navbar .contentholder .controlpanel .buttons{
+  padding: 1px;
+  height: 25px;
+  border-bottom: 1px solid #5D6D7E;
+  border-radius: 1px;
+  background-color: white;
+  color: #5D6D7E;
+}
+
+#navbar .contentholder .controlpanel .buttons:hover{
+  transition: 0.2s;
+  height: 25px;
+  border-radius: 1px;
+  border: 1px solid #283747;
+  background-color: white;
+  color: #283747;
+}
+
+#navbar .contentholder .controlpanel #logout{
+  height: 25px;
+  border-bottom: 1px solid #C2185B;
+}
+
+#navbar .contentholder .controlpanel #logout:hover{
+  transition: 0.2s;
+  height: 25px;
+  border-radius: 0px;
+  border: 1px solid #C2185B;
+  background-color: #C2185B;
+  color: white;
+}
+
+#navbar .contentholder .controlpanel #register{
+  height: 25px;
+  border-radius: 1px;
+  border-bottom: 1px solid #FF5733;
+  background-color: white;
+  color: #5D6D7E;
+}
+
+#navbar .contentholder .controlpanel #register:hover{
+  transition: 0.2s;
+  height: 25px;
+  border-radius: 1px;
+  border: 1px solid #FF5733;
+  background-color: #FF5733;
+  color: white;
+}
+
+#navbar .contentholder .userstatus{
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+}
+
+#navoffset {
+  height: 80px;
+}
+
+#splashimage{
+  background-image: url("img/Log_Homes_Heading_1.jpg");
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  text-align: center;
+
+}
+
+#splashtext{
+  width: 40%;
+  height: 100%;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+}
+
+#splashtext h1, p {
+  text-align: left;
+  position: relative;
+  top: 340px;
+  left: 50px;
+  color: white;
+
+}
+
+#splashcover{
+  margin: 0px;
+  padding: 0px;
+  width: 59%;
+  height: 100%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+#splashcover div{
+  position: relative;
+  top: 430px; left: 200px;
+  border-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: #FFAB91;
+  height: 70px;
+  width: 400px;
+}
+
+#splashcover div h3{
+  color: white;
+}
+
+#splashcover div:hover{
+  transition: 0.5s;
+  transition-timing-function: cubic-bezier(0.02, 1.36, 1, 1);
+  top: 30px; left: 200px;
+  background-image: linear-gradient(#FFAB91,#FF5722);
+  height: 470px;
+}
+
+.myspace {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  vertical-align: bottom;
+  margin: 15px;
+  display: inline-block;
+  width: 70%;
+  min-width: 800px;
+  border-radius: 15px;
+  border: 1px solid lightgray;
+}
+
+.myspace .space_header {
+  height: 100px;
+}
+
+.myspace .space_header .space_info {
+  float: left;
+  position: relative;
+  vertical-align: bottom;
+  height: 100px;
+  display: inline-block;
+  width: 60%;
+  text-align: left;
+}
+
+.myspace .space_header .space_image{
+  margin-left: 25px;
+  float:left;
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 15%;
+  background-image: url("https://source.unsplash.com/600x400?livingroom,kitchen,bedroom,food");
+  background-size: cover;
+}
+
+.myspace .space_header .edit_panel{
+  display: inline-block;
+  width: 100px;
+  margin-right: 20px;
+  opacity: 0;
+  visibility: hidden;
+  float: right;
+  background-color: white;
+}
+
+.myspace .space_header .edit_panel .edit_space{
+  padding: 1px;
+  height: 25px;
+  width: 40px;
+  border: 0px;
+  border-bottom: 1px solid #5D6D7E;
+  border-radius: 1px;
+  background-color: white;
+  color: #5D6D7E;
+}
+.myspace .space_header .edit_panel .edit_space:hover{
+  transition: 0.2s;
+  height: 24px;
+  border-radius: 1px;
+  border: 1px solid #283747;
+  background-color: white;
+  color: #283747;
+}
+
+.myspace .space_header .edit_panel .delete_space{
+  padding: 1px;
+  height: 25px;
+  width: 40px;
+  border: 0px;
+  border-bottom: 1px solid red;
+  border-radius: 1px;
+  background-color: white;
+  color: red;
+}
+
+.myspace .space_header .edit_panel .delete_space:hover{
+  padding: 1px;
+  height: 25px;
+  width: 40px;
+  border: 0px;
+  border-bottom: 1px solid red;
+  border-radius: 1px;
+  background-color: red;
+  color: white;
+}
+
+
+
+.myspace .space_info div{
+  margin-left: 15px;
+  width: 300px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 150;
+}
+
+.myspace .space_info div i{
+  color: #5D6D7E;
+}
+
+hr {
+  border: solid 0.5px lightgray;
+}
+
+
+.myspace:hover {
+  transition: 0.3s;
+  margin: 15px;
+  display: inline-block;
+  width: 70%;
+  min-width: 800px;
+  border-radius: 15px;
+  border: 1px solid #5D6D7E;
+}
+
+.myspace:hover .space_header .edit_panel{
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+
+}
+
+#create_space {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin: auto;
+  padding: 0;
+  margin: 0;
+
+  width: 61px;
+  height: 61px;
+  background-color: black;
+}
+
+#create_space .plus{
+  position: relative;
+  bottom: 4px;
+  left: 14px;
+  font-size: 49px;
+  display: inline;
+  opacity: 1;
+
+}
+
+#create_space .non_plus{
+
+  position: relative;
+  bottom: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  display: inline;
+  visibility: hidden;
+  opacity: 0;
+
+}
+
+#create_space:hover .plus{
+  visibility: hidden;
+}
+
+#create_space:hover .non_plus{
+  font-style: bold;
+  transition: 0.2s;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+#create_space:hover {
+  transition: 0.2s;
+  width: 400px;
+  height: 60px;
+  background-color: #FF5733;
+}
+
+.space-bookings {
+  margin-top: 10px;
+}
+
+.write_space {
+  overflow: hidden;
+  vertical-align: bottom;
+  display: inline-block;
+  text-align: left;
+  height: 470px;
+  width: 800px;
+  border: solid 1px lightgray;
+  border-radius: 15px;
+}
+
+.write_space:hover {
+  transition: 0.3s;
+  border: solid 1px gray;
+}
+
+.write_space .space_name_holder {
+  position: relative;
+  text-align: left;
+  vertical-align: bottom;
+  height: 100px;
+}
+
+.write_space .price_holder {
+  position: relative;
+  text-align: left;
+  vertical-align: bottom;
+  height: 40px;
+}
+
+.write_space .description_holder {
+  position: relative;
+  text-align: left;
+  vertical-align: bottom;
+  height: 180px;
+}
+
+.write_space .contents {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.contents textarea {
+  margin-left: 40px;
+  width: 500px;
+  height: 180px;
+  border: 0px;
+  font-style: italic;
+  margin-left:
+}
+
+.contents h3{
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.contents h3 small{
+  margin-left: 3px;
+  color: grey;
+}
+
+.contents .input_field{
+  width: 200px;
+  border: 0px;
+  font-style: italic;
+}
+
+.write_space .price_holder {
+}
+
+.write_space .title {
+  color: grey;
+  margin-top: 10px;
+  width: 95%;
+  text-align: right;
+}
+
+.write_space:hover .title {
+  transition: 0.3s;
+  color: #263238;
+}
+
+
+
+
+.write_space .submit_holder {
+  text-align: center;
+  vertical-align: baseline;
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  color: white;
+}
+
+
+.write_space .submit_holder:hover {
+  transition: 0.3s;
+  height: 70px;
+  background-color: #FF5733;
+  color: white;
+}
+
+.write_space .submit_holder .submit_space{
+  background: transparent;
+}
+
+.write_space .submit_holder .submit_space:hover {
+  transition: 0.2s;
+  color: #FF5733;
+  background: white;
+}

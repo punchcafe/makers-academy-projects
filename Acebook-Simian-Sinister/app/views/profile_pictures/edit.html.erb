@@ -1,0 +1,10 @@
+hi
+<%= form_tag(user_profile_picture_path, method: :put, multipart: true) do %>
+
+ <%= label_tag :profile_picture %><br />
+ <%= file_field_tag :profile_picture %>
+
+ <%= submit_tag "update"%>
+<% end %>
+
+<%= button_to 'delete', user_profile_picture_path, id: 'delete', method: :delete %>

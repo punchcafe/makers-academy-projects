@@ -1,0 +1,7 @@
+<%= form_with(model: post, local: true) do |form| %>
+  <%= form.file_field :snap %>
+  <%= form.text_field :message %>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

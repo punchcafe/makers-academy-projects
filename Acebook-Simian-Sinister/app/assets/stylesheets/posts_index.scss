@@ -1,0 +1,192 @@
+#nav-c {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#nav-c-g2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+#greeting {
+    color: rgb(255, 255, 255);
+}
+
+#nav-c-g3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+#con1 {
+
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+}
+
+#con1-g2 {
+    display: flex;
+    height: 330px;
+    overflow-y: scroll;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#poster_avi {
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  border: white solid 1px;
+  border-radius: 25px;
+}
+
+#poster_avi img {
+  width: 50px;
+}
+
+#username {
+    float: left;
+}
+
+#timestamp {
+    float: right;
+}
+
+#message-con {
+    border-radius: 4px;
+    margin-top: 2%;
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 5px 5px 5px 5px;
+    border-radius: 30px 10px;
+}
+
+#message-text {
+    text-align: center;
+}
+
+
+#con1-g1 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+#new-post {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #fff;
+    color: white;
+    width: auto;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50px 20px;
+
+}
+
+#new-post:hover {
+    background-color: rgba(0, 0, 0, 1);
+    border: 1px dotted #fff;
+    color: white;
+    width: auto;
+    padding: 1em 1.1em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    cursor: pointer;
+    transform: scale(1.1);
+    border-radius: 50px 20px;
+
+
+}
+
+#delete {
+    float: left;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #fff;
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    cursor: pointer;
+    height: 30px;
+    width: 18%;
+    font-size: 10px;
+    border-radius: 50px 20px;
+
+}
+
+#delete:hover {
+    float: left;
+    background-color: rgba(0, 0, 0, 1);
+    border: 1px dotted #fff;
+    color: white;
+    padding: 1em 1.1em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    cursor: pointer;
+    transform: scale(1.1);
+    height: 30px;
+    width: 18%;
+    font-size: 10px;
+    border-radius: 50px 20px;
+
+}
+
+#update {
+    float: right;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #fff;
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    cursor: pointer;
+    height: 10px;
+    width: 15%;
+    font-size: 10px;
+    border-radius: 50px 20px;
+}
+
+#update:hover {
+    float: right;
+    background-color: rgba(0, 0, 0, 1);
+    border: 1px dotted #fff;
+    color: white;
+    padding: 1em 1.1em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    cursor: pointer;
+    transform: scale(1.1);
+    height: 10px;
+    width: 15%;
+    font-size: 10px;
+    border-radius: 50px 20px;
+
+}
+
+#new-post {
+    position: relative;
+    margin-top: 14px;
+    margin-bottom: -70px;
+    z-index: +1;
+    display: inline-block;
+    width: 40%;
+}
+
+#new-post:hover {
+    background-color: rgba(0, 0, 0, 1);
+    transform: scale(1.2);
+}
